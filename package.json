@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "nx run-many --target=serve --projects=web,api",
     "build": "nx run-many --target=build --projects=web,api",
-    "compose": "docker-compose up -d"
+    "compose": "docker compose up -d"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.4.8",
