@@ -55,3 +55,6 @@ next-env.d.ts
 
 # docker volumes
 postgres_data/ 
+
+# prisma
+packages/database/src/generated/client/*

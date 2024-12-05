@@ -59,17 +59,14 @@ Backend:
 
 - Implement filtering/search functionality
 - Make the application mobile responsive
+- Add product images
 
 ## Getting Started
 
 1. Clone this repository
 
 ```bash
-git clone https://github.com/Yardzen-Inc/coding-challenge
-```
-
-```bash
-cd coding-challenge
+git clone https://github.com/Yardzen-Inc/coding-challenge && cd coding-challenge
 ```
 
 2. Install dependencies
@@ -95,10 +92,46 @@ This will start both the frontend and backend servers:
 - Frontend (Next.js): http://localhost:3000
 - Backend (NestJS): http://localhost:3333
 
+5. Initialize and seed the database
+
+First, generate the Prisma client:
+
+```bash
+pnpm db:generate
+```
+
+Then push the schema to the database:
+
+```bash
+pnpm db:push
+```
+
+Finally, seed the database with sample products:
+
+```bash
+pnpm db:seed
+```
+
+To view and manage the database through a GUI:
+
+```bash
+pnpm db:studio
+```
+
+This will open Prisma Studio at http://localhost:5555
+
+This will populate the database with sample outdoor products including:
+
+- Furniture (benches, chairs)
+- Plants and planters
+- Lighting fixtures
+- Outdoor features (fire pit, privacy screen)
+- Decorative items
+
 ## Project Structure
 
 This is a monorepo using Nx for workspace management:
 
 - `apps/web`: Next.js frontend application
 - `apps/api`: NestJS backend application
-- `packages/*`: Shared libraries (if any)
+- `packages/database`: Prisma schema, client, and database utilities

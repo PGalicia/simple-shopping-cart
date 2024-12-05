@@ -1,0 +1,47 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/client"
+}
+
+model Product {
+  id        String      @id @default(uuid())
+  name      String
+  price     Decimal     @db.Decimal(10, 2)
+  type      ProductType
+  cartItems CartItem[]
+
+  @@map("products")
+}
+
+model Cart {
+  id        String     @id @default(uuid())
+  cartItems CartItem[]
+
+  @@map("carts")
+}
+
+model CartItem {
+  id        String  @id @default(uuid())
+  product   Product @relation(fields: [productId], references: [id])
+  productId String
+  cart      Cart    @relation(fields: [cartId], references: [id])
+  cartId    String
+
+  @@map("cart_items")
+  @@index([productId])
+  @@index([cartId])
+}
+
+enum ProductType {
+  furniture
+  planter
+  plant
+  lighting
+  decor
+  feature
+} 

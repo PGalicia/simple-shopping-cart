@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
-    "web": "apps/web"
+    "web": "apps/web",
+    "database": "packages/database"
   }
 }
