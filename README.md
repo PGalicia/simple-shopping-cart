@@ -134,3 +134,24 @@ If you have time remaining and would like to continue, you may consider the foll
 - Implement filtering/search functionality
 - Make the application mobile responsive
 - Add product images
+
+## Submission Guidelines
+
+Please submit your completed challenge using one of the following methods:
+
+1. Public GitHub Repository
+
+   - Create a new public repository
+   - Push your solution
+   - Share the repository URL with us
+
+2. Private GitHub Repository
+
+   - Create a new private repository
+   - Add [`engineering@yardzen.com`](mailto:engineering@yardzen.com) as a collaborator
+   - Share the repository URL with us
+
+3. ZIP Archive
+   - Create a ZIP archive of your project directory
+   - Exclude the `node_modules` directory
+   - Email the ZIP file to [`engineering@yardzen.com`](mailto:engineering@yardzen.com)
