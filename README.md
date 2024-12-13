@@ -112,27 +112,27 @@ This is a monorepo using Nx for workspace management:
 
 1. Item Display
 
-   - Fetch and display items with prices via API
-   - Group items by their types
-   - Frontend must fetch data through API endpoints (no direct database access)
+   - ~~Fetch and display items with prices via API~~
+   - ~~Group items by their types~~
+   - ~~Frontend must fetch data through API endpoints (no direct database access)~~
 
 2. Item Selection
 
-   - Users can check/uncheck items on the frontend
-   - Selected items can be added to cart
+   - ~~Users can check/uncheck items on the frontend~~
+   - ~~Selected items can be added to cart~~
 
 3. Cart Management
-   - "Add to Cart" button adds checked items to cart
-   - Only one cart should exist in the database
-   - Cart should be upserted on each "Add to Cart" action (create if none exists, update if it does)
-   - Ability to fetch and display cart items with total price
+   - ~~"Add to Cart" button adds checked items to cart~~
+   - ~~Only one cart should exist in the database~~
+   - ~~Cart should be upserted on each "Add to Cart" action (create if none exists, update if it does)~~
+   - ~~Ability to fetch and display cart items with total price~~
 
 ### Stretch Goals
 
 If you have time remaining and would like to continue, you may consider the following:
 
-- Implement filtering/search functionality
-- Make the application mobile responsive
+- ~~Implement filtering/search functionality~~
+- ~~Make the application mobile responsive~~
 - Add product images
 
 ## Submission Guidelines
